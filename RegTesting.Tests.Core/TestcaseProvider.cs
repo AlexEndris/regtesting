@@ -53,7 +53,7 @@ namespace RegTesting.Tests.Core
 			PermissionSet objPermSet = new PermissionSet(PermissionState.Unrestricted);
 			AppDomainSetup objSetup = new AppDomainSetup
 			                          	{
-											ApplicationBase = AppDomain.CurrentDomain.BaseDirectory,
+                                            ApplicationBase = Path.GetDirectoryName(_strTestsFile),
 			                          		ShadowCopyFiles = "true",
 			                          		CachePath = strCachePath
 			                          	};
@@ -175,7 +175,7 @@ namespace RegTesting.Tests.Core
 			PermissionSet objPermSet = new PermissionSet(PermissionState.Unrestricted);
 			AppDomainSetup objSetup = new AppDomainSetup
 			{
-				ApplicationBase = AppDomain.CurrentDomain.BaseDirectory,
+                ApplicationBase = Path.GetDirectoryName(_strTestsFile),
 				ShadowCopyFiles = "true",
 				CachePath = strCachePath
 			};
