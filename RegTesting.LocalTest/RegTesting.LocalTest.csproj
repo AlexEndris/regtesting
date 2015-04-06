@@ -113,18 +113,6 @@
       <Project>{6EAFA536-480C-46E2-8D5D-8DD58646DA2C}</Project>
       <Name>RegTesting.Tests.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RegTesting.Tests.Framework\RegTesting.Tests.Framework.csproj">
-      <Project>{cf5f9d83-8f58-408e-ae13-1b504353b95e}</Project>
-      <Name>RegTesting.Tests.Framework</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="chromedriver.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="IEDriverServer.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
